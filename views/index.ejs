@@ -1,8 +1,182 @@
 <% include ./partials/header%>
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+
+    <!-- Legger til navigasjon her -->
+    <div class="navigation">
+
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <h1>Residence Capriolo Livigno</h1>
+            <p>Apartments and holiday</p>
+
+            <a href="#" class="button">Book Now</a>
+        </div>
+    </header>
+    <h2>Our Apartments</h2>
+    <!-- apartments wil come here as popups -->
+
+    <main>
+
+        <!-- Section 1 About us  -->
+        <section>
+            <h2>About us</h2>
+            <p> In the middle of San Rocco, a few meters from free nature and ski slopes you can find Residence Capriolo. Located
+                200 m from the gondola Carosello 3000. Close to supermarkeds, duty-free shops, restaurants and local attractions.</p>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod sit, error omnis alias temporibus
+                unde, quos quisquam ut, labore ab neque? Qui modi possimus optio est laboriosam pariatur nobis.</p>
+        </section>
+
+        <!-- Section 2 Our Apartments -->
+
+        <section>
 
 
-<p> EJS funker faktisk her og...</p>
 
-<% include ./partials/footer%>
+        </section>
+
+        <!-- Section 3 Booking -->
+
+        <section>
+        </section>
+
+
+
+        <!-- Section 4 Map, Terms and Services -->
+
+        <section>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h2 class="headerTCMap">Service and Conditions</h2>
+                    <hr>
+                    <p class="termsHeader">
+                        <strong>The offer includes:</strong>
+                    </p>
+
+                    <ul class="termsConditions">
+                        <li> All expences as water, electricity and taxes</li>
+                        <li> Bed sheets and towels</li>
+                        <li> Final Cleaning</li>
+                        <li> Skiroom in the winter</li>
+                        <li> Wi-Fi included</li>
+                    </ul>
+
+                    <p class="termsHeader">
+                        <strong>Conditions</strong>
+                    </p>
+                    <ul class="termsConditions">
+                        <li>Check In: From 14:00 - 20:00</li>
+                        <li>Check Out: From 07:00 - 10:00 </li>
+                        <li> At check-in there will be asked for a deposit (50-100€) which will be returned at check out</li>
+                    </ul>
+                </div>
+
+                <div class="col-1-of-2">
+                    <div>
+                        <h2 class="headerTCMap">Here We Are:</h2>
+                        <!-- <hr>
+                        <div id="map"></div>
+                        <script>
+                            function initMap() {
+                                var livigno = {
+                                    lat: 46.524401,
+                                    lng: 10.127369
+                                };
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 19,
+                                    center: livigno
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: livigno,
+                                    map: map
+                                });
+                            }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnPQX1h8cS8NVHBTw7m2jmU8jfF0P1CE0&callback=initMap">
+                        </script>
+                    </div> -->
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <div class="popup" id="room1">
+        <div class="popup__content">
+            <div class="popup_slideshow">
+
+            </div>
+            <div class="popup__text">
+                <h3>Information about appartment</h3>
+                <p>The apartment is a two rooms with one bedroom, one living room, bathroom and kitchen. In the bedroom there
+                    are a double bed with sheets, and two wardrobes. The living room contains a fully furnished kitchen,
+                    television and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The
+                    apartment is suitable for two or three persons, particularly fitted for a small family.</p>
+            </div>
+            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+        </div>
+
+    </div>
+    <div class="popup" id="room3">
+        <div class="popup__content">
+            <div class="popup_slideshow">
+
+            </div>
+            <div class="popup__text">
+                <h3>Information about appartment</h3>
+                <p>The apartment is a single room with one bedroom, one living room, bathroom and kitchen. In the bedroom there
+                    are a double bed with sheets, and a wardrobe. the living room contains a fully furnished kitchen, television
+                    and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The apartment
+                    is suitable for two or three persons, particularly fitted for a small family.</p>
+            </div>
+            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+        </div>
+    </div>
+    <div class="popup" id="room4">
+        <div class="popup__content">
+            <div class="popup_slideshow">
+
+            </div>
+            <div class="popup__text">
+                <h3>Information about appartment</h3>
+                <p>The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony.In one
+                    bedroom there is a double bed, in the other one bunk bed for two persons, and each room is complete with
+                    sheets and a wardrobes. The living room contains a fully furnished kitchen, microwave, television and
+                    a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The apartment is suitable
+                    from 4 persons to 5 persons.</p>
+            </div>
+            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+        </div>
+    </div>
+    <div class="popup" id="room5">
+        <div class="popup__content">
+            <div class="popup_slideshow">
+
+            </div>
+            <div class="popup__text">
+                <h3>Information about appartment</h3>
+                <p>The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony.In one
+                    bedroom there is a double bed, in the other two single bed (which can eventually become a double bed),
+                    and each room is complete with sheets and a wardrobes. The living room contains a fully furnished kitchen,
+                    microwave, television and a sofa bed for one or two persons. In the bathroom you will find a shower and
+                    fresh towels.The apartment is suitable from 4 persons to 6 persons.</p>
+            </div>
+            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+        </div>
+    </div>
+    <div class="popup" id="room6">
+        <div class="popup__content">
+            <div class="popup_slideshow">
+
+            </div>
+            <div class="popup__text">
+                <h3>Information about appartment</h3>
+                <p>Apartment monoroom for 2 persons. Double bed or two single beds. Kitchen and dining table, bathroom with
+                    a shower, wc and washbasin. The apartment has a balcony.</p>
+            </div>
+            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+        </div>
+    </div>
+    <% include ./partials/footer%>
