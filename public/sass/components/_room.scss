@@ -1,0 +1,29 @@
+.appartment{
+    position: relative;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-content: center;
+    padding:5px; 
+    &__img{
+        height:400px;
+    }
+    
+
+    &__text{
+        position: absolute;
+        bottom: 5px;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: $color-white;
+        font-size: $default-font-size;
+    }
+}
+.big{
+    width:40%;
+}
+
+img{
+    // height:500px;
+    height:100%;
+}

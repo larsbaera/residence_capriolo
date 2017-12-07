@@ -9,7 +9,13 @@
 
 // @import "abstracts/functions";
 
+@import "components/button";
+@import "components/room";
+@import "components/map";
+
+
 @import "layout/header";
 @import "layout/footer";
+@import "layout/terms";
 
 @import "pages/home";

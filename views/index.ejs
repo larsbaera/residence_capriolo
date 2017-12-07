@@ -1,62 +1,149 @@
 <% include ./partials/header%>
 
-
     <!-- Legger til navigasjon her -->
-    <div class="navigation">
+    <!-- <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-    </div>
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__background">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>1</span>About Us
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>2</span> Our Appartents
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>3</span>Where to find us
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <span>4</span>Book Now
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div> -->
 
     <!-- header -->
-    <header>
-        <div class="container">
-            <h1>Residence Capriolo Livigno</h1>
-            <p>Apartments and holiday</p>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="" alt="Logo" class="header__logo">
+        </div>
 
-            <a href="#" class="button">Book Now</a>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Residence Capriolo Livigno</span>
+                <span class="heading-primary-sub">Apartments and holiday</span>
+            </h1>
+            <a href="#" class="btn btn--white">Book Now</a>
         </div>
     </header>
-    <h2>Our Apartments</h2>
-    <!-- apartments wil come here as popups -->
 
     <main>
 
         <!-- Section 1 About us  -->
-        <section>
-            <h2>About us</h2>
-            <p> In the middle of San Rocco, a few meters from free nature and ski slopes you can find Residence Capriolo. Located
+        <section class="section-about">
+            <h2 class="heading-secondary">About us</h2>
+
+            <p class="paragraph"> In the middle of San Rocco, a few meters from free nature and ski slopes you can find Residence Capriolo. Located
                 200 m from the gondola Carosello 3000. Close to supermarkeds, duty-free shops, restaurants and local attractions.</p>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod sit, error omnis alias temporibus
+            <p class="paragraph"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod sit, error omnis alias temporibus
                 unde, quos quisquam ut, labore ab neque? Qui modi possimus optio est laboriosam pariatur nobis.</p>
         </section>
 
         <!-- Section 2 Our Apartments -->
 
-        <section>
+        <!-- mock idea 
+        picture with roomnumber, indication of capacity. Hover effect to reveal button to reveal a popup to reveal more information and pictures.-->
+
+
+        <section class="section-appartments">
+            <h2 class="heading-secondary heading__center">Our Apartments</h2>
+
+            <div class="appartment">
+
+                <div class="appartment big">
+                    <div class="appartment__img">
+                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+
+                        <div class="appartment__text">
+                            <p>Appartment 4</p>
+                            <p>Capacity: 1-3</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="appartment big">
+                    <div class="appartment__img">
+                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <div class="appartment__text">
+                            <p>Appartment 5</p>
+                            <p>Capacity: 1-3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appartment">
+                    <div class="appartment__img">
+                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <div class="appartment__text">
+                            <p>Appartment 3</p>
+                            <p>Capacity: 1-3</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- \img\Appartment 3\Kitchen_apt3.jpg -->
+
+                <div class="appartment">
+                    <div class="appartment__img">
+                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <div class="appartment__text">
+                            <p>Appartment 6</p>
+                            <p>Capacity: 1-3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appartment">
+                    <div class="appartment__img">
+                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <div class="appartment__text">
+                            <p>Appartment 1</p>
+                            <p>Capacity: 1-3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
+            <!-- \img\Appartment 1\livingroom1_apt1.jpg '/img/Appartment 1/MAPPA APT. 1.JPG-->
         </section>
 
-        <!-- Section 3 Booking -->
+        <!-- Section 3 Map, Terms and Services -->
 
-        <section>
-        </section>
-
-
-
-        <!-- Section 4 Map, Terms and Services -->
-
-        <section>
-
-            <div class="row">
-                <div class="col-1-of-2">
-                    <h2 class="headerTCMap">Service and Conditions</h2>
+        <section class="section-terms">
+            <div class="terms">
+                <div class="row">
+                    <h2 class="heading-secondary heading__center">Service and Conditions</h2>
                     <hr>
-                    <p class="termsHeader">
+                    <h3 class="heading__tertiary">
                         <strong>The offer includes:</strong>
-                    </p>
+                    </h3>
 
-                    <ul class="termsConditions">
+                    <ul class="terms__list">
                         <li> All expences as water, electricity and taxes</li>
                         <li> Bed sheets and towels</li>
                         <li> Final Cleaning</li>
@@ -64,20 +151,18 @@
                         <li> Wi-Fi included</li>
                     </ul>
 
-                    <p class="termsHeader">
+                    <h3 class="heading__tertiary ">
                         <strong>Conditions</strong>
-                    </p>
-                    <ul class="termsConditions">
+                    </h3>
+                    <ul class="terms__list">
                         <li>Check In: From 14:00 - 20:00</li>
                         <li>Check Out: From 07:00 - 10:00 </li>
                         <li> At check-in there will be asked for a deposit (50-100€) which will be returned at check out</li>
                     </ul>
-                </div>
 
-                <div class="col-1-of-2">
                     <div>
-                        <h2 class="headerTCMap">Here We Are:</h2>
-                        <!-- <hr>
+                        <h2 class="header__secondary">Here We Are:</h2>
+                        <hr>
                         <div id="map"></div>
                         <script>
                             function initMap() {
@@ -97,12 +182,18 @@
                         </script>
                         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnPQX1h8cS8NVHBTw7m2jmU8jfF0P1CE0&callback=initMap">
                         </script>
-                    </div> -->
                     </div>
                 </div>
+            </div>
+
+        </section>
+
+        <!-- Section 3 Booking -->
+
+        <section class="section-booking">
         </section>
     </main>
-
+    <!-- 
     <div class="popup" id="room1">
         <div class="popup__content">
             <div class="popup_slideshow">
@@ -115,7 +206,9 @@
                     television and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The
                     apartment is suitable for two or three persons, particularly fitted for a small family.</p>
             </div>
-            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+            <div class="popup__button">
+                <a href="#" class="button">Book Now</a>
+            </div>
         </div>
 
     </div>
@@ -131,7 +224,9 @@
                     and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The apartment
                     is suitable for two or three persons, particularly fitted for a small family.</p>
             </div>
-            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+            <div class="popup__button">
+                <a href="#" class="button">Book Now</a>
+            </div>
         </div>
     </div>
     <div class="popup" id="room4">
@@ -147,7 +242,9 @@
                     a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The apartment is suitable
                     from 4 persons to 5 persons.</p>
             </div>
-            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+            <div class="popup__button">
+                <a href="#" class="button">Book Now</a>
+            </div>
         </div>
     </div>
     <div class="popup" id="room5">
@@ -163,7 +260,9 @@
                     microwave, television and a sofa bed for one or two persons. In the bathroom you will find a shower and
                     fresh towels.The apartment is suitable from 4 persons to 6 persons.</p>
             </div>
-            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+            <div class="popup__button">
+                <a href="#" class="button">Book Now</a>
+            </div>
         </div>
     </div>
     <div class="popup" id="room6">
@@ -176,7 +275,9 @@
                 <p>Apartment monoroom for 2 persons. Double bed or two single beds. Kitchen and dining table, bathroom with
                     a shower, wc and washbasin. The apartment has a balcony.</p>
             </div>
-            <div class="popup__button"><a href="#" class="button">Book Now</a></div>
+            <div class="popup__button">
+                <a href="#" class="button">Book Now</a>
+            </div>
         </div>
-    </div>
+    </div> -->
     <% include ./partials/footer%>
