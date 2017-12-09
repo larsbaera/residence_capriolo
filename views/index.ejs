@@ -1,15 +1,13 @@
 <% include ./partials/header%>
 
     <!-- Legger til navigasjon her -->
-    <!-- <div class="navigation">
+    <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
         <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__background">
+        <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
@@ -17,7 +15,7 @@
                     </a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a href="#section-appartments" class="navigation__link">
                         <span>2</span> Our Appartents
                     </a>
                 </li>
@@ -33,7 +31,7 @@
                 </li>
             </ul>
         </nav>
-    </div> -->
+    </div>
 
     <!-- header -->
     <header class="header">
@@ -54,12 +52,52 @@
 
         <!-- Section 1 About us  -->
         <section class="section-about">
-            <h2 class="heading-secondary">About us</h2>
+            <div class="about-content">
+                <h2 class="heading-secondary center">About us</h2>
 
-            <p class="paragraph"> In the middle of San Rocco, a few meters from free nature and ski slopes you can find Residence Capriolo. Located
-                200 m from the gondola Carosello 3000. Close to supermarkeds, duty-free shops, restaurants and local attractions.</p>
-            <p class="paragraph"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quod sit, error omnis alias temporibus
-                unde, quos quisquam ut, labore ab neque? Qui modi possimus optio est laboriosam pariatur nobis.</p>
+                <p class="paragraph"> In the middle of San Rocco, a few meters from free nature and ski slopes you can find Residence Capriolo.
+                    Located 200 m from the gondola Carosello 3000. Close to supermarkeds, duty-free shops, restaurants and
+                    local attractions. The hostel lies a short 10 min walk from the city center towards the (north?). Lies
+                    right next to the primaryschool, local policestation and the church. The appartments are fully equipped
+                    and ready for use. A superb location for easy access to hikes, the skiing resort and shopping.</p>
+            </div>
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                                <img src="/img/Appartment 1/livingroom1_apt1.jpg" alt="...">
+                                <!-- https://www.ahstatic.com/photos/6626_rokgb_00_p_1024x768.jpg -->
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
         </section>
 
         <!-- Section 2 Our Apartments -->
@@ -67,19 +105,19 @@
         <!-- mock idea 
         picture with roomnumber, indication of capacity. Hover effect to reveal button to reveal a popup to reveal more information and pictures.-->
 
-
-        <section class="section-appartments">
-            <h2 class="heading-secondary heading__center">Our Apartments</h2>
+        <section class="section-appartments" id="section-appartments">
+            <h2 class="heading-secondary center">Our Apartments</h2>
 
             <div class="appartment">
 
                 <div class="appartment big">
                     <div class="appartment__img">
-                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <img src="/img/Appartment 1/bathroom1_apt1.jpg" alt="Apt 1">
 
                         <div class="appartment__text">
                             <p>Appartment 4</p>
                             <p>Capacity: 1-3</p>
+                            <a href="#popup" class="btn btn-white">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -87,17 +125,18 @@
 
                 <div class="appartment big">
                     <div class="appartment__img">
-                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <img src="/img/Appartment 1/bedroom1_apt1.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>Appartment 5</p>
                             <p>Capacity: 1-3</p>
+                            <a href="#room3" class="btn btn-white">Read More</a>                            
                         </div>
                     </div>
                 </div>
 
                 <div class="appartment">
                     <div class="appartment__img">
-                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <img src="/img/Appartment 1/kitchen 1b.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>Appartment 3</p>
                             <p>Capacity: 1-3</p>
@@ -108,7 +147,7 @@
 
                 <div class="appartment">
                     <div class="appartment__img">
-                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <img src="/img/Appartment 1/kitchen1_apt1.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>Appartment 6</p>
                             <p>Capacity: 1-3</p>
@@ -118,7 +157,18 @@
 
                 <div class="appartment">
                     <div class="appartment__img">
-                        <img src="/img/Appartment 3/Kitchen_apt3.jpg" alt="Apt 1">
+                        <img src="/img/Appartment 1/livingroom 1b_apt1.jpg" alt="Apt 1">
+                        <div class="appartment__text">
+                            <p>Appartment 1</p>
+                            <p>Capacity: 1-3</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="appartment">
+                    <div class="appartment__img">
+                        <img src="/img/Appartment 1/livingroom1_apt1.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>Appartment 1</p>
                             <p>Capacity: 1-3</p>
@@ -126,8 +176,6 @@
                     </div>
                 </div>
             </div>
-
-
 
             <!-- \img\Appartment 1\livingroom1_apt1.jpg '/img/Appartment 1/MAPPA APT. 1.JPG-->
         </section>
@@ -137,13 +185,13 @@
         <section class="section-terms">
             <div class="terms">
                 <div class="row">
-                    <h2 class="heading-secondary heading__center">Service and Conditions</h2>
-                    <hr>
-                    <h3 class="heading__tertiary">
+                    <h2 class="heading-secondary center">Service and Conditions</h2>
+
+                    <h3 class="heading__tertiary center">
                         <strong>The offer includes:</strong>
                     </h3>
 
-                    <ul class="terms__list">
+                    <ul class="terms__list center">
                         <li> All expences as water, electricity and taxes</li>
                         <li> Bed sheets and towels</li>
                         <li> Final Cleaning</li>
@@ -151,41 +199,41 @@
                         <li> Wi-Fi included</li>
                     </ul>
 
-                    <h3 class="heading__tertiary ">
+                    <h3 class="heading__tertiary  center">
                         <strong>Conditions</strong>
                     </h3>
-                    <ul class="terms__list">
+                    <ul class="terms__list center">
                         <li>Check In: From 14:00 - 20:00</li>
                         <li>Check Out: From 07:00 - 10:00 </li>
                         <li> At check-in there will be asked for a deposit (50-100€) which will be returned at check out</li>
                     </ul>
 
-                    <div>
-                        <h2 class="header__secondary">Here We Are:</h2>
-                        <hr>
-                        <div id="map"></div>
-                        <script>
-                            function initMap() {
-                                var livigno = {
-                                    lat: 46.524401,
-                                    lng: 10.127369
-                                };
-                                var map = new google.maps.Map(document.getElementById('map'), {
-                                    zoom: 19,
-                                    center: livigno
-                                });
-                                var marker = new google.maps.Marker({
-                                    position: livigno,
-                                    map: map
-                                });
-                            }
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnPQX1h8cS8NVHBTw7m2jmU8jfF0P1CE0&callback=initMap">
-                        </script>
+                    <div class="container">
+                        <h2 class="header__secondary center">Here We Are:</h2>
+                        <div class="dicMap">
+                            <div id="map"></div>
+                            <script>
+                                function initMap() {
+                                    var livigno = {
+                                        lat: 46.524401,
+                                        lng: 10.127369
+                                    };
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 19,
+                                        center: livigno
+                                    });
+                                    var marker = new google.maps.Marker({
+                                        position: livigno,
+                                        map: map
+                                    });
+                                }
+                            </script>
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnPQX1h8cS8NVHBTw7m2jmU8jfF0P1CE0&callback=initMap">
+                            </script>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- Section 3 Booking -->
@@ -193,32 +241,110 @@
         <section class="section-booking">
         </section>
     </main>
-    <!-- 
-    <div class="popup" id="room1">
+
+    <div class="popup" id="popup">
         <div class="popup__content">
-            <div class="popup_slideshow">
+            <div class="popup__header">
+            <a href="#section-appartments" class="popup__close">&times;</a>
+            </div>
+            <div class="popup__top">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                                <img src="/img/Appartment 1/livingroom1_apt1.jpg" alt="...">
+                                <!-- https://www.ahstatic.com/photos/6626_rokgb_00_p_1024x768.jpg -->
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
 
             </div>
-            <div class="popup__text">
+            <div class="popup__bottom">
                 <h3>Information about appartment</h3>
                 <p>The apartment is a two rooms with one bedroom, one living room, bathroom and kitchen. In the bedroom there
                     are a double bed with sheets, and two wardrobes. The living room contains a fully furnished kitchen,
                     television and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The
                     apartment is suitable for two or three persons, particularly fitted for a small family.</p>
-            </div>
-            <div class="popup__button">
                 <a href="#" class="button">Book Now</a>
             </div>
         </div>
+    </div>
+
 
     </div>
-    <div class="popup" id="room3">
+    <div class="popup popup3" id="room3">
         <div class="popup__content">
-            <div class="popup_slideshow">
-
-            </div>
+                <a href="#section-appartments" class="popup__close">&times;</a> 
+                <div class="popup__header">
+                        <h1>Room 3</h1>    
+                        
+                        </div>
+                        <div class="popup__top">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                            <img src="/img/Appartment 1/livingroom1_apt1.jpg" alt="...">
+                                            <!-- https://www.ahstatic.com/photos/6626_rokgb_00_p_1024x768.jpg -->
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
             <div class="popup__text">
-                <h3>Information about appartment</h3>
+                <h3>Information about appartment </h3>
                 <p>The apartment is a single room with one bedroom, one living room, bathroom and kitchen. In the bedroom there
                     are a double bed with sheets, and a wardrobe. the living room contains a fully furnished kitchen, television
                     and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The apartment
@@ -228,8 +354,12 @@
                 <a href="#" class="button">Book Now</a>
             </div>
         </div>
-    </div>
-    <div class="popup" id="room4">
+    </div>    
+</div>
+
+
+
+    <!-- <div class="popup" id="room4">
         <div class="popup__content">
             <div class="popup_slideshow">
 
@@ -246,8 +376,10 @@
                 <a href="#" class="button">Book Now</a>
             </div>
         </div>
-    </div>
-    <div class="popup" id="room5">
+    </div> -->
+
+
+    <!-- <div class="popup" id="room5">
         <div class="popup__content">
             <div class="popup_slideshow">
 
@@ -264,8 +396,8 @@
                 <a href="#" class="button">Book Now</a>
             </div>
         </div>
-    </div>
-    <div class="popup" id="room6">
+    </div> -->
+    <!-- <div class="popup" id="room6">
         <div class="popup__content">
             <div class="popup_slideshow">
 
