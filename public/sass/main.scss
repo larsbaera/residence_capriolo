@@ -7,10 +7,8 @@
 @import "base/typography";
 @import "base/utilities";
 
-// @import "abstracts/functions";
-
 @import "components/button";
-@import "components/room";
+@import "components/appartment";
 @import "components/map";
 @import "components/popup";
 
@@ -19,5 +17,9 @@
 @import "layout/footer";
 @import "layout/terms";
 @import "layout/navigation";
+@import "layout/info";
+@import "layout/booking";
+
 
 @import "pages/home";
+@import "node_modules/bootstrap/scss/bootstrap";
