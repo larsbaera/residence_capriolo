@@ -1,0 +1,43 @@
+#carousel-main-page{
+    width: 95%; //width of picture
+    
+    // width: 80rem; //width of picture
+    left:50%;
+    transform: translateX(-50%);
+   
+    .carousel-caption h3{
+        font-size: 3rem;
+        font-weight: 600;
+        text-shadow: -1px 0 $color-black, 0 1px $color-black, 1px 0 $color-black, 0 -1px $color-black;
+     }
+     .carousel-caption p{
+        font-size: 2rem;
+        font-weight: 600;
+        text-shadow: -1px 0 $color-black, 0 1px $color-black, 1px 0 $color-black, 0 -1px $color-black;
+     }
+}
+
+#carousel-popup{
+    // width: 80rem; //width of picture
+    // max-height:50rem;
+    // width:100%;
+    left:50%;
+    transform: translateX(-50%);
+    .carousel-caption h3{
+        font-size: 3rem;
+        font-weight: 600;
+        text-shadow: -1px 0 $color-black, 0 1px $color-black, 1px 0 $color-black, 0 -1px $color-black;
+     }
+     .carousel-caption p{
+        font-size: 2rem;
+        font-weight: 600;
+        text-shadow: -1px 0 $color-black, 0 1px $color-black, 1px 0 $color-black, 0 -1px $color-black;
+     }
+}
+
+.carousel img{
+    // max-width:50rem;
+     max-height: 80rem;
+
+}
+

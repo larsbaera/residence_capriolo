@@ -8,22 +8,37 @@ main{
 }
 
 .section-about {
-background-color: $color-main-light;
+    background-color: $color-background; 
+// background-color: $color-main-light;
 text-align: center;
 width: 100%;
 margin: 0 auto;
+// padding-top: 16rem;
+// padding-bottom: 16rem;
 
 .about-content{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    font-weight: 700;   
+    // padding-top: 16rem;
+    padding:25vh 0 ;
+    // padding-bottom: 16rem;
+    font-weight: 700;
+    font-size: 3rem; 
+    width:80%;
+    margin: 0 auto;
+    .heading-secondary{
+        font-size:5rem;
+        padding-bottom: 2rem;
+        letter-spacing: 1rem;
+    }
+    .paragraph{
+        font-size: 2rem;
+    }
 }
 }
 
 .section-appartments{
     background-color: $color-background;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
     
 }
 
@@ -31,16 +46,16 @@ margin: 0 auto;
     background-color: $color-background;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    background-color: $color-main-light;
-    color:$color-white;
+    color:$color-black;
+  
     
 }
 .section-booking{
-    background-color: $color-background;
+    background-color:$color-background;
     text-align:center;
-    font-size:3rem;
+    font-size:2rem;
     font-weight:700;
     // height:50rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    // padding-top: 2rem;
+    // padding-bottom: 2rem;
 }

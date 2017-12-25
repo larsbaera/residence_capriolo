@@ -1,8 +1,3 @@
-// @import "node_modules/compass";
-
-// @import "compass/reset";
-// @import "compass/css3";
-
 /* Colors */	
 /* ---------------------------------------- */ 
 $border: 		 #c6c6c6;
@@ -12,10 +7,9 @@ $booking-green: #bdcc00;
 $asphalt: 		#506982;
 
 *{
-	// @include box-sizing(border-box);
+	//  box-sizing:border-box;
 }
 body{
-
 	text-align: center;
 	font-family: 'Lato', 'sans-serif';
 	font-weight: 400;
@@ -26,24 +20,46 @@ a{
 }
 .info-text{
   text-align: left;
-  width: 100%;
+	width: 100%;
+	font-size: 2.0rem;
+	font-weight: 500;
+	color: #999;
+	&__header{
+		font-size: 1.7rem;
+		font-weight: 400;
+		color: #999;
+	}
+
 }
 header, form{
 	padding: 4em 10%;
 }
 
 .form-group{
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
 h2.heading{
-	font-size: 18px;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 	font-weight: 300;
 	text-align: left;
 	color: $asphalt;
-	border-bottom: 1px solid $asphalt;
-	padding-bottom: 3px;
-	margin-bottom: 20px;
+	border-bottom: .1rem solid $asphalt;
+	padding-bottom: .3rem;
+	margin-bottom: 2.0rem;
+}
+.fa{
+	color: #999;
+}
+h1.heading{
+	font-size: 5rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	// text-align: center;
+	color: $asphalt;
+	border-bottom: .2rem solid $asphalt;
+	padding-bottom: .3rem;
+	margin-bottom: 2.0rem;
 }
 
 .controls{
@@ -57,62 +73,42 @@ h2.heading{
 	textarea,
 	button,
 	select{
-		padding: 12px;
-		font-size: 14px;
-		border: 1px solid $border;
+		padding: 1.2rem;
+		border: .1rem solid $border;
 		width: 100%;
-		margin-bottom: 18px;
+		margin-bottom: 1.8rem;
 		color: #888;
 		font-family: 'Lato', 'sans-serif';
-		font-size: 16px;
+		font-size: 2rem;
 		font-weight: 300;
-		// @include border-radius(2px);
-		// @include transition(all .3s);
+		border-radius: .2rem;
+		transform: transition(all .3s);
 
-		&:focus, &:hover{
-			outline: none;
-			border-color: $border-focus;
-			+ label{
-				color: $booking-green;
-          cursor: text;
-			}
-		}
 	}
 
-	.fa-sort{
-		position:absolute;
-		right: 10px;
-		top: 17px;
-		color: #999;
-	}
+
 	select{
-		// @include appearance(none);
+		// appearance(none);
 		cursor: pointer;
 	}
 	label{
-		// position: absolute;
-		left: 8px;
-		top: 12px;
-     width: 60%;
+     width: 95%;
      color: #999;
-		font-size: 16px;
+		font-size: 2rem;
 		display: inline-block;
-		padding: 4px 10px;
+		padding: .4rem 1.0rem;
 		font-weight: 400;
-		background-color: rgba(255,255,255,0);
-		// @include transition(color .3s, top .3s, background-color .8s);
-     background-color: rgba(255,255,255,1);
 
     &.active{
-			top: -11px;
+			top: -1.1rem;
 			color: #555;
-      background-color: rgba(255,255,255,1);
       width: auto;
 		}
 	}
 	textarea{
 		resize: none;
-		height: 200px;
+		height: 20.0rem;
+		 overflow-x: hidden;
 	}
 }
 
@@ -121,11 +117,7 @@ button{
   background-color: $brand-color;
   border: none;
   color: #fff;
-  padding: 12px 0;
-  float: right;
-  &:hover{
-    background-color: lighten($brand-color, 5%);
-  }
+  padding: 1.4rem 1rem;
 }
 
 .clear:after{
@@ -136,10 +128,9 @@ button{
 
 // Grid https://codepen.io/chriscoyier/pen/eGcLw
 
-$pad: 10px;
+$pad: 1.0rem;
 
 .grid {
-  background: white;
   //margin: 0 0 $pad 0;
   
   &:after {

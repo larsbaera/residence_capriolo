@@ -1,5 +1,6 @@
 <% include ./partials/header%>
 
+
     <!-- Legger til navigasjon her -->
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -55,63 +56,57 @@
     <!-- main section of content -->
     <main>
         <!-- Section 1 About us -->
-        <section class="section-about">
+            <section class="section-about">
             <div class="about-content">
                 <h2 class="heading-secondary center">About us</h2>
                 <p class="paragraph"> In the middle of San Rocco, a few meters from free nature and ski slopes you can find Residence Capriolo.
-                    Located 200 m from the gondola Carosello 3000. Close to supermarkeds, duty-free shops, restaurants and
-                    local attractions. The hostel lies a short 10 min walk from the city center towards the (north?). Lies
-                    right next to the primaryschool, local policestation and the church. The appartments are fully equipped
+                    Located 200 m from the gondola Carosello 3000. Close to supermarkets, duty-free shops, restaurants and
+                    local attractions. The hostel lies a short 10 min walk from the city centre towards the (north?). The Residence lies right next to 
+                    right next to the primary school, local police station and the church. The apartments are fully equipped
                     and ready for use. A superb location for easy access to hikes, the skiing resort and shopping.</p>
             </div>
 
-            <div id="carousel-main-page" class="carousel slide" data-ride="carousel" data-interval="false">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
+            <div id="carousel-main-page" class="carousel slide about-carousel" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
                     <li data-target="#carousel-main-page" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-main-page" data-slide-to="1"></li>
                     <li data-target="#carousel-main-page" data-slide-to="2"></li>
-                    <!-- <li data-target="#carousel-main-page" data-slide-to="3"></li>
-                    <li data-target="#carousel-main-page" data-slide-to="4"></li> -->
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="...">
+                    </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Room 1</h3>
                             <p>stunning view for an affordable price</p>
                         </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="...">
+                      </div>
+                  
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3>Room 2</h3>
+                           <h3>Room 2</h3>
                             <p>The bed is soft, warm and inviting!!</p>
                         </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="/img/Appartment 1/livingroom1_apt1.jpg" alt="...">
-                        <!-- https://www.ahstatic.com/photos/6626_rokgb_00_p_1024x768.jpg -->
+                      </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/Appartment 1/livingroom1_apt1.jpg" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3>Room 2 - Kitchen</h3>
-                            <p>Enjoy many meals here</p>
+                            <h3>Room 3</h3>
+                            <p>The bed is soft, warm and inviting!!</p>
                         </div>
+                     
                     </div>
                 </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-main-page" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                <a class="carousel-control-prev" href="#carousel-main-page" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#carousel-main-page" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                <a class="carousel-control-next" href="#carousel-main-page" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
                 </a>
-            </div>
-        </section>
+              </div>
+        </section>      
 
         <!-- Section 2 Our Apartments -->
 
@@ -127,7 +122,7 @@
                         <img src="/img/Appartment 1/bathroom1_apt1.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>
-                                <span class="appartment__title"> Appartment 4 </span>
+                                <span class="appartment__title"> Apartment 4 </span>
                             </p>
                             <div class="appartment__info">
                                 <p>
@@ -145,7 +140,7 @@
                         <img src="/img/Appartment 1/bedroom1_apt1.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>
-                                <span class="appartment__title"> Appartment 5 </span>
+                                <span class="appartment__title"> Apartment 5 </span>
                             </p>
                             <div class="appartment__info">
                                 <p>
@@ -162,7 +157,7 @@
                         <img src="/img/Appartment 1/kitchen 1b.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>
-                                <span class="appartment__title"> Appartment 1 </span>
+                                <span class="appartment__title"> Apartment 1 </span>
                             </p>
                             <div class="appartment__info">
                                 <p>
@@ -180,7 +175,7 @@
                         <img src="/img/Appartment 1/kitchen1_apt1.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>
-                                <span class="appartment__title"> Appartment 3 </span>
+                                <span class="appartment__title"> Apartment 3 </span>
                             </p>
                             <div class="appartment__info">
                                 <p>
@@ -197,7 +192,7 @@
                         <img src="/img/Appartment 1/livingroom 1b_apt1.jpg" alt="Apt 1">
                         <div class="appartment__text">
                             <p>
-                                <span class="appartment__title"> Appartment 6 </span>
+                                <span class="appartment__title"> Apartment 6 </span>
                             </p>
                             <div class="appartment__info">
                                 <p>
@@ -217,45 +212,57 @@
 
         <section class="section-terms">
             <div class="terms">
-                <div class="container">
+                <div>
                     <h2 class="heading-secondary center">General Information, services and facilities </h2>
                     <div class="information">
                         <div class="information__services">
 
                             <h3 class="heading__tertiary center">
+                                <span class="terms__icon"><i class="fa fa-check-square-o"></i></span>
+                                <br>
                                 <strong>The offer includes:</strong>
                             </h3>
 
                             <ul class="terms__list center">
-                                <li> All expences as water, electricity and taxes</li>
-                                <li> Bed sheets and towels</li>
-                                <li> Final Cleaning</li>
-                                <li> Skiroom in the winter</li>
-                                <li> Wi-Fi included</li>
+                                <li> All Expences Included<br><span class="terms__extras">(Water, Electricity And Taxes)</span></li>
+                                <li> Bedsheets And Towels</li>
+                                <li> Final Cleaning Of Apartment</li>
+                                <li> Ski room For Storage<br><span class="terms__extras">(In The Winter)</span></li>
+                                <li><i class="fa fa-wifi"></i> Wi-Fi Is Included</li>
                             </ul>
                         </div>
                         <div class="information__conditions">
                             <h3 class="heading__tertiary  center">
+                                <span class="terms__icon"><i class="fa fa-edit"></i></span>
+                                <br>                                    
                                 <strong>Conditions</strong>
                             </h3>
                             <ul class="terms__list center">
                                 <li>Check In: From 14:00 - 20:00</li>
-                                <li>Check Out: From 07:00 - 10:00 </li>
-                                <li> At check-in there will be asked for a deposit (50-100€) which will be returned at check out</li>
+                                <li>Check Out: From 07:00 - 10:00 </li><br>
+                                <li> At check-in, A Deposit Will Be Requested (50-100€)<br><span class="terms__extras">Will be returned at check out</span></li>
                             </ul>
                         </div>
                         <div class="information__transport">
                             <h3 class="heading__tertiary center">
+                                <span class="terms__icon"><i class="fa fa-taxi"></i></span>
+                                <br>                                    
                                 <strong>Transport</strong>
                             </h3>
+                            <ul class="terms__list center">
+                                <li> Bus from Bormio: 20 min </li>
+                                <li> Train from Milano: 3 hours </li>
+                                <li> Bus from Milano: 4 hours </li>
+                                <li> Bus from Davos: 1 hour </li>
+                            </ul>
                         </div>
 
                     </div>
 
 
 
-                    <div class="container">
-                        <h2 class="header__secondary center">Here We Are:</h2>
+                    <div class="container mapContainer">
+                        <h2 class="heading-secondary center">Here We Are:</h2>
                         <div class="dicMap">
                             <div id="map"></div>
                             <script>
@@ -282,129 +289,368 @@
             </div>
         </section>
 
-        <p>Incomming booking request from: ${req.body.name} </p>
+        <!-- <p>Incomming booking request from: ${req.body.name} </p>s -->
 
         <!-- Section 3 Booking -->
 
         <section class="section-booking">
-        <% var msg = "" %>
-            <p>
-                <%= msg %>
-            </p>
             <form method="POST" action="send">
                 <div class="form-group">
-                    <h2 class="heading-secondary">Booking and Contact</h2>
+                    <h1 class="heading">Booking and Contact</h1>
+                    <p class="info-text__header">Send us a booking request on mail via this booking form and we will get back to you as quickly as we can to plan and confirm your stay with us.</p>
                     <div class="controls">
-                        <input type="text" name="name" id="name" class="floatLabel">
-                        <label for="name">Name</label>
+                        <label for="name"><i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;Name</label>
+                        <input type="text" name="name" id="name"  placeholder="Name..." required>
+                        
                     </div>
                     <div class="controls">
-                        <input type="text" name="email" id="email" class="floatLabel">
-                        <label for="email">E-Mail</label>
-                    </div>
-
-                    <div class="controls">
-                        <input type="tel" name="phone" id="phone" class="floatLabel">
-                        <label for="phone">Phone</label>
+                        <label for="email"><i class="fa fa-envelope"></i>&nbsp;&nbsp;E-Mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-Mail..." required>
                     </div>
 
-                    <div class="grid">
-                        <div class="col-2-3">
-                            <div class="controls">
-                                <input type="text" name="street" id="street" class="floatLabel">
-                                <label for="street">Street</label>
-                            </div>
-                        </div>
-                        <div class="col-1-3">
-                            <div class="controls">
-                                <input type="text" name="streetNumber" id="streetNumber" class="floatLabel">
-                                <label for="streetNumber">Number</label>
-                            </div>
-                        </div>
+                    <div class="controls">
+                        <label for="phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number..." required>
                     </div>
 
                     <div class="grid">
                         <div class="col-2-3">
                             <div class="controls">
-                                <input type="text" name="city" id="city" class="floatLabel">
-                                <label for="city">City</label>
+                                <label for="street"><i class="fa fa-home"></i>&nbsp;&nbsp;Street</label>
+                                <input type="text" name="street" id="street"  placeholder="Street Address" required>
                             </div>
                         </div>
                         <div class="col-1-3">
                             <div class="controls">
-                                <input type="text" name="postCode" id="postCode" class="floatLabel">
-                                <label for="postCode">Post Code</label>
+                                <label for="streetNumber"><i class="fa fa-sort-numeric-asc"></i>&nbsp;&nbsp;Number</label>
+                                <input type="text" name="streetNumber" id="streetNumber" placeholder="Street Number..." required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="col-2-3">
+                            <div class="controls">
+                                    <label for="city"><i class="fa fa-map-signs"></i>&nbsp;&nbsp;City</label>
+                                <input type="text" name="city" id="city" placeholder="City..." required>
+                            </div>
+                        </div>
+                        <div class="col-1-3">
+                            <div class="controls">
+                                <label for="postCode"><i class="fa fa-sort-numeric-asc"></i>&nbsp;&nbsp;Post Code</label>
+                                <input type="text" name="postCode" id="postCode" placeholder="Postal Code" required>
                             </div>
                         </div>
                     </div>
                     <div class="controls">
-                        <input type="text" id="country" class="floatLabel" name="country">
-                        <label for="country">Country</label>
+                        <label for="country"><i class="fa fa-globe"></i>&nbsp;&nbsp;Country</label>
+                            <select name="country" id="country" required>
+                                <option value="">Country... </option>
+                                <option value="Afganistan">Afghanistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermuda">Bermuda</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bonaire">Bonaire</option>
+                                <option value="Bosnia &amp; Herzegovina">Bosnia &amp; Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Canary Islands">Canary Islands</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Cayman Islands">Cayman Islands</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Channel Islands">Channel Islands</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Christmas Island">Christmas Island</option>
+                                <option value="Cocos Island">Cocos Island</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Cook Islands">Cook Islands</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cote DIvoire">Cote D'Ivoire</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Curaco">Curacao</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czech Republic">Czech Republic</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="East Timor">East Timor</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Falkland Islands">Falkland Islands</option>
+                                <option value="Faroe Islands">Faroe Islands</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="French Guiana">French Guiana</option>
+                                <option value="French Polynesia">French Polynesia</option>
+                                <option value="French Southern Ter">French Southern Ter</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Great Britain">Great Britain</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Greenland">Greenland</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guadeloupe">Guadeloupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Hawaii">Hawaii</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea North">Korea North</option>
+                                <option value="Korea Sout">Korea South</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Macau">Macau</option>
+                                <option value="Macedonia">Macedonia</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Martinique">Martinique</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mayotte">Mayotte</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Midway Islands">Midway Islands</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Nambia">Nambia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherland Antilles">Netherland Antilles</option>
+                                <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                <option value="Nevis">Nevis</option>
+                                <option value="New Caledonia">New Caledonia</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Niue">Niue</option>
+                                <option value="Norfolk Island">Norfolk Island</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau Island">Palau Island</option>
+                                <option value="Palestine">Palestine</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Phillipines">Philippines</option>
+                                <option value="Pitcairn Island">Pitcairn Island</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                <option value="Republic of Serbia">Republic of Serbia</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="St Barthelemy">St Barthelemy</option>
+                                <option value="St Eustatius">St Eustatius</option>
+                                <option value="St Helena">St Helena</option>
+                                <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                <option value="St Lucia">St Lucia</option>
+                                <option value="St Maarten">St Maarten</option>
+                                <option value="St Pierre &amp; Miquelon">St Pierre &amp; Miquelon</option>
+                                <option value="St Vincent &amp; Grenadines">St Vincent &amp; Grenadines</option>
+                                <option value="Saipan">Saipan</option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="Samoa American">Samoa American</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome &amp; Principe">Sao Tome &amp; Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syria">Syria</option>
+                                <option value="Tahiti">Tahiti</option>
+                                <option value="Taiwan">Taiwan</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tokelau">Tokelau</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Turks &amp; Caicos Is">Turks &amp; Caicos Is</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Erimates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States of America">United States of America</option>
+                                <option value="Uraguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Vatican City State">Vatican City State</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                <option value="Wake Island">Wake Island</option>
+                                <option value="Wallis &amp; Futana Is">Wallis &amp; Futana Is</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zaire">Zaire</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <h2 class="heading">Details</h2>
                     <div class="grid">
-                        <div class="col-1-4 col-1-4-sm">
-                            <div class="controls">
-                                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
-                                <label for="arrive" class="label-date">
-                                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                            <div class="col-1-2 col-1-2-sm">
+                              <div class="controls">
+                                  <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrival</label>
+                                <input type="date" id="arrive" name="arrive" value="<?php echo date('Y-m-d'); ?>" required>
+                              </div>      
                             </div>
-                        </div>
-                        <div class="col-1-4 col-1-4-sm">
-                            <div class="controls">
-                                <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
-                                <label for="depart" class="label-date">
-                                    <i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                            <div class="col-1-2 col-1-2-sm">
+                              <div class="controls">
+                                  <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Departure</label>
+                                <input type="date" id="depart" name="depart" value="<?php echo date('Y-m-d'); ?>" / required>
+                              </div>      
                             </div>
-                        </div>
-                    </div>
+                              </div>
+
+                
                     <div class="grid">
-                        <div class="col-1-3 col-1-3-sm">
+                        <div class="col-1-2 col-1-2-sm">
                             <div class="controls">
+                                    <label for="numPeople"><i class="fa fa-male"></i>&nbsp;&nbsp;# People</label>
                                 <i class="fa fa-sort"></i>
-                                <select class="floatLabel" name="numPeople">
-                                    <option value="blank"></option>
+                                <select name="numPeople">
                                     <option value="1">1</option>
                                     <option value="2" selected>2</option>
                                     <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="X">If more than 6, please specify
+                                    </option>
                                 </select>
-                                <label for="fruit">
-                                    <i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
                             </div>
                         </div>
-                        <div class="col-1-3 col-1-3-sm">
+                        <div class="col-1-2 col-1-2-sm">
                             <div class="controls">
+                                <label for="AppReq"><i class="fa fa-bed"></i>&nbsp;&nbsp;Requested Apparment</label>
                                 <i class="fa fa-sort"></i>
-                                <select class="floatLabel" name="bathroom">
-                                    <option value="blank"></option>
-                                    <option value="deluxe" selected>With Bathroom</option>
-                                    <option value="without">Without Bathroom</option>
+                                <select name="AppReq">                                   
+                                    <option value="App1"selected>Apartment 1</option>
+                                    <option value="App3">Apartment 3</option>
+                                    <option value="App4">Apartment 4</option>
+                                    <option value="App5">Apartment 5</option>
+                                    <option value="App6">Apartment 6</option>
                                 </select>
-                                <label for="fruit">Room</label>
-                            </div>
-                        </div>
-
-                        <div class="col-1-3 col-1-3-sm">
-                            <div class="controls">
-                                <i class="fa fa-sort"></i>
-                                <select class="floatLabel" name="bedSize">
-                                    <option value="blank"></option>
-                                    <option value="single-bed">Single Bed</option>
-                                    <option value="double-bed" selected>Double Bed</option>
-                                </select>
-                                <label for="fruit">Bedding</label>
                             </div>
                         </div>
 
                     </div>
                     <div class="grid">
-                        <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
-                        <br>
                         <div class="controls">
-                            <textarea name="comments" class="floatLabel" id="comments"></textarea>
-                            <label for="comments">Comments</label>
+                            <p class="info-text">Please describe if you have any special needs or requirements:</p>
+                            <label for="comments"><i class="fa fa-comments"></i>&nbsp;&nbsp;Comments</label>
+                            <textarea name="comments" id="comments" placeholder="Add a comment..."></textarea>
                         </div>
                         <button type="submit" value="Submit" class="col-1-4">Submit</button>
                     </div>
@@ -413,65 +659,71 @@
             </form>
         </section>
     </main>
+    
+    
     <!-- CHANGE ID ON POPUP -->
     <div class="popup" id="popup">
+        <a href="#section-appartments" class="popup__close"/>            
         <div class="popup__content">
-            <div class="popup__header">
-                <a href="#section-appartments" class="popup__close">&times;</a>
-            </div>
+            <!-- <div class="popup__header">
+            </div> -->
             <div class="popup__top">
-                <div id="carousel-popup-1" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-popup-1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-popup-1" data-slide-to="1"></li>
-                        <li data-target="#carousel-popup-1" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="...">
-                            <div class="carousel-caption">
+                    <div id="carousel-popup" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel-popup" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-popup" data-slide-to="1"></li>
+                            <li data-target="#carousel-popup" data-slide-to="2"></li>
+                            </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Room 1</h3>
+                                    <p>stunning view for an affordable price</p>
+                                </div>
+                              </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                   <h3>Room 2</h3>
+                                    <p>The bed is soft, warm and inviting!!</p>
+                                </div>
+                              </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="/img/Appartment 1/livingroom1_apt1.jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Room 3</h3>
+                                    <p>The bed is soft, warm and inviting!!</p>
+                                </div>
+                             
                             </div>
                         </div>
-                        <div class="item">
-                            <img src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="...">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/Appartment 1/livingroom1_apt1.jpg" alt="...">
-                            <!-- https://www.ahstatic.com/photos/6626_rokgb_00_p_1024x768.jpg -->
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-popup-1" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-popup-1" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
+                        <a class="carousel-control-prev" href="#carousel-popup" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-popup" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
             </div>
             <div class="popup__bottom">
-                <h3>Information about appartment</h3>
+                <h3>Information About Apartment</h3>
                 <p>The apartment is a two rooms with one bedroom, one living room, bathroom and kitchen. In the bedroom there
                     are a double bed with sheets, and two wardrobes. The living room contains a fully furnished kitchen,
                     television and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The
                     apartment is suitable for two or three persons, particularly fitted for a small family.</p>
-                <a href="#" class="button">Book Now</a>
+                    <a href="#" class="btn-text">Book Now</a>
+                <!-- <button href="#" class="btn btn-success">Book Now</button> -->
             </div>
         </div>
     </div>
 
 
     </div>
-    <div class="popup popup3" id="room3">
+    <div class="popup popup3" id="room3" data-interval="false">
         <div class="popup__content">
             <a href="#section-appartments" class="popup__close">&times;</a>
             <div class="popup__header">
@@ -479,51 +731,55 @@
 
             </div>
             <div class="popup__top">
-                <div id="carousel-popup-3" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-popup-3" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-popup-3" data-slide-to="1"></li>
-                        <li data-target="#carousel-popup-3" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="...">
-                            <div class="carousel-caption">
+                    <div id="carousel-popup" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#carousel-popup" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-popup" data-slide-to="1"></li>
+                            <li data-target="#carousel-popup" data-slide-to="2"></li>
+                            </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-o/0e/cc/bd/ab/hotel-exe-vienna.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Room 1</h3>
+                                    <p>stunning view for an affordable price</p>
+                                </div>
+                              </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                   <h3>Room 2</h3>
+                                    <p>The bed is soft, warm and inviting!!</p>
+                                </div>
+                              </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="/img/Appartment 1/livingroom1_apt1.jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Room 3</h3>
+                                    <p>The bed is soft, warm and inviting!!</p>
+                                </div>
+                             
                             </div>
                         </div>
-                        <div class="item">
-                            <img src="https://www.leonardo-hotels.com/octopus/upload/images/rooms/murcdbllhecc15feb17800x600.jpg" alt="...">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/img/Appartment 1/livingroom1_apt1.jpg" alt="...">
-                            <!-- https://www.ahstatic.com/photos/6626_rokgb_00_p_1024x768.jpg -->
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-popup-3" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-popup-3" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+                        <a class="carousel-control-prev" href="#carousel-popup" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-popup" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                 <div class="popup__text">
-                    <h3>Information about appartment </h3>
+                    <h3>Information about apartment </h3>
                     <p>The apartment is a single room with one bedroom, one living room, bathroom and kitchen. In the bedroom
                         there are a double bed with sheets, and a wardrobe. the living room contains a fully furnished kitchen,
                         television and a sofa bed for one person. In the bathroom you will find a shower and fresh towels.The
                         apartment is suitable for two or three persons, particularly fitted for a small family.</p>
                 </div>
                 <div class="popup__button">
-                    <a href="#" class="button">Book Now</a>
+                    <a href="#" class="btn btn-success btn-lg">Book Now</a>
                 </div>
             </div>
         </div>
@@ -537,7 +793,7 @@
 
             </div>
             <div class="popup__text">
-                <h3>Information about appartment</h3>
+                <h3>Information about Apartment</h3>
                 <p>The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony.In one
                     bedroom there is a double bed, in the other one bunk bed for two persons, and each room is complete with
                     sheets and a wardrobes. The living room contains a fully furnished kitchen, microwave, television and
@@ -557,7 +813,7 @@
 
             </div>
             <div class="popup__text">
-                <h3>Information about appartment</h3>
+                <h3>Information about Apartment</h3>
                 <p>The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony.In one
                     bedroom there is a double bed, in the other two single bed (which can eventually become a double bed),
                     and each room is complete with sheets and a wardrobes. The living room contains a fully furnished kitchen,
@@ -575,7 +831,7 @@
 
             </div>
             <div class="popup__text">
-                <h3>Information about appartment</h3>
+                <h3>Information about Apartment</h3>
                 <p>Apartment monoroom for 2 persons. Double bed or two single beds. Kitchen and dining table, bathroom with
                     a shower, wc and washbasin. The apartment has a balcony.</p>
             </div>

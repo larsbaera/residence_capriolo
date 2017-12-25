@@ -1,6 +1,29 @@
 .terms{
+        width: 95%;
+        margin: 0 auto;
     &__list{
         list-style: none;
     }
-    
+    .heading-secondary{
+        padding-bottom: 3rem;
+    }
+    .heading__tertiary{
+        padding-bottom: 1.5rem;
+    }
+    .information{
+        font-size: 1.7rem;
+        font-weight: 500;
+        
+    }
+    &__icon{
+        font-size:3rem;
+    }
+    &__extras{
+        font-weight:500;
+        font-size: 1.4rem;
+    }
+}
+
+.mapContainer{
+    padding-top: 10rem;
 }

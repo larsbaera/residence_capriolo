@@ -206,7 +206,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
@@ -215,32 +215,63 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup__close {
-    float: right; }
+    right: 3px;
+    top: 3px; }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 85vh;
-    min-height: 70rem;
+    border: 0.6rem solid #000;
+    width: 65%;
+    min-height: 75vh;
     background-color: #fff; }
   .popup__header {
     width: 100%;
-    height: 4rem;
-    font-size: 3rem; }
+    height: 1rem;
+    font-size: 3rem;
+    margin: 0 auto; }
   .popup__top {
     display: block; }
   .popup__bottom {
+    border-top: 0.6rem solid #000;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
     display: block; }
 
-.carousel-inner img {
-  max-height: 600px;
-  margin: auto; }
-
-.popup3:target {
+.carousel-popup:target {
   opacity: 1;
   visibility: visible; }
+
+#carousel-main-page {
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%); }
+  #carousel-main-page .carousel-caption h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; }
+  #carousel-main-page .carousel-caption p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; }
+
+#carousel-popup {
+  left: 50%;
+  transform: translateX(-50%); }
+  #carousel-popup .carousel-caption h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; }
+  #carousel-popup .carousel-caption p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; }
+
+.carousel img {
+  max-height: 80rem; }
 
 .header {
   height: 94vh;
@@ -276,8 +307,26 @@ body {
   .footer__list {
     list-style: none; }
 
-.terms__list {
-  list-style: none; }
+.terms {
+  width: 95%;
+  margin: 0 auto; }
+  .terms__list {
+    list-style: none; }
+  .terms .heading-secondary {
+    padding-bottom: 3rem; }
+  .terms .heading__tertiary {
+    padding-bottom: 1.5rem; }
+  .terms .information {
+    font-size: 1.7rem;
+    font-weight: 500; }
+  .terms__icon {
+    font-size: 3rem; }
+  .terms__extras {
+    font-weight: 500;
+    font-size: 1.4rem; }
+
+.mapContainer {
+  padding-top: 10rem; }
 
 .navigation__checkbox {
   display: none; }
@@ -435,23 +484,42 @@ a {
 
 .info-text {
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  font-size: 2.0rem;
+  font-weight: 500;
+  color: #999; }
+  .info-text__header {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #999; }
 
 header, form {
   padding: 4em 10%; }
 
 .form-group {
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
 
 h2.heading {
-  font-size: 18px;
+  font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 300;
   text-align: left;
   color: #506982;
-  border-bottom: 1px solid #506982;
-  padding-bottom: 3px;
-  margin-bottom: 20px; }
+  border-bottom: 0.1rem solid #506982;
+  padding-bottom: .3rem;
+  margin-bottom: 2.0rem; }
+
+.fa {
+  color: #999; }
+
+h1.heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #506982;
+  border-bottom: 0.2rem solid #506982;
+  padding-bottom: .3rem;
+  margin-bottom: 2.0rem; }
 
 .controls {
   text-align: left;
@@ -464,102 +532,55 @@ h2.heading {
   .controls textarea,
   .controls button,
   .controls select {
-    padding: 12px;
-    font-size: 14px;
-    border: 1px solid #c6c6c6;
+    padding: 1.2rem;
+    border: 0.1rem solid #c6c6c6;
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 1.8rem;
     color: #888;
     font-family: 'Lato', 'sans-serif';
-    font-size: 16px;
-    font-weight: 300; }
-    .controls input[type="text"]:focus, .controls input[type="text"]:hover,
-    .controls input[type="email"]:focus,
-    .controls input[type="email"]:hover,
-    .controls input[type="number"]:focus,
-    .controls input[type="number"]:hover,
-    .controls input[type="date"]:focus,
-    .controls input[type="date"]:hover,
-    .controls input[type="tel"]:focus,
-    .controls input[type="tel"]:hover,
-    .controls textarea:focus,
-    .controls textarea:hover,
-    .controls button:focus,
-    .controls button:hover,
-    .controls select:focus,
-    .controls select:hover {
-      outline: none;
-      border-color: #9FB1C1; }
-      .controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
-      .controls input[type="email"]:focus + label,
-      .controls input[type="email"]:hover + label,
-      .controls input[type="number"]:focus + label,
-      .controls input[type="number"]:hover + label,
-      .controls input[type="date"]:focus + label,
-      .controls input[type="date"]:hover + label,
-      .controls input[type="tel"]:focus + label,
-      .controls input[type="tel"]:hover + label,
-      .controls textarea:focus + label,
-      .controls textarea:hover + label,
-      .controls button:focus + label,
-      .controls button:hover + label,
-      .controls select:focus + label,
-      .controls select:hover + label {
-        color: #bdcc00;
-        cursor: text; }
-  .controls .fa-sort {
-    position: absolute;
-    right: 10px;
-    top: 17px;
-    color: #999; }
+    font-size: 2rem;
+    font-weight: 300;
+    border-radius: .2rem;
+    transform: transition(all 0.3s); }
   .controls select {
     cursor: pointer; }
   .controls label {
-    left: 8px;
-    top: 12px;
-    width: 60%;
+    width: 95%;
     color: #999;
-    font-size: 16px;
+    font-size: 2rem;
     display: inline-block;
-    padding: 4px 10px;
-    font-weight: 400;
-    background-color: rgba(255, 255, 255, 0);
-    background-color: white; }
+    padding: .4rem 1.0rem;
+    font-weight: 400; }
     .controls label.active {
-      top: -11px;
+      top: -1.1rem;
       color: #555;
-      background-color: white;
       width: auto; }
   .controls textarea {
     resize: none;
-    height: 200px; }
+    height: 20.0rem;
+    overflow-x: hidden; }
 
 button {
   cursor: pointer;
   background-color: #1b3d4d;
   border: none;
   color: #fff;
-  padding: 12px 0;
-  float: right; }
-  button:hover {
-    background-color: #224c60; }
+  padding: 1.4rem 1rem; }
 
 .clear:after {
   content: "";
   display: table;
   clear: both; }
 
-.grid {
-  background: white; }
-  .grid:after {
-    /* Or @extend clearfix */
-    content: "";
-    display: table;
-    clear: both; }
+.grid:after {
+  /* Or @extend clearfix */
+  content: "";
+  display: table;
+  clear: both; }
 
 [class*='col-'] {
   float: left;
-  padding-right: 10px; }
+  padding-right: 1rem; }
   .grid [class*='col-']:last-of-type {
     padding-right: 0; }
 
@@ -585,34 +606,39 @@ button {
   width: 12.5%; }
 
 .section-about {
-  background-color: #6bb9f0;
+  background-color: #f7f7f7;
   text-align: center;
   width: 100%;
   margin: 0 auto; }
   .section-about .about-content {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    font-weight: 700; }
+    padding: 25vh 0;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 80%;
+    margin: 0 auto; }
+    .section-about .about-content .heading-secondary {
+      font-size: 5rem;
+      padding-bottom: 2rem;
+      letter-spacing: 1rem; }
+    .section-about .about-content .paragraph {
+      font-size: 2rem; }
 
 .section-appartments {
   background-color: #f7f7f7;
-  padding-top: 6rem;
-  padding-bottom: 6rem; }
+  padding-top: 15rem;
+  padding-bottom: 10rem; }
 
 .section-terms {
   background-color: #f7f7f7;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #6bb9f0;
-  color: #fff; }
+  color: #000; }
 
 .section-booking {
   background-color: #f7f7f7;
   text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  font-size: 2rem;
+  font-weight: 700; }
 
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
