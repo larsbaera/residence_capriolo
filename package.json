@@ -1,0 +1,45 @@
+{
+  "name": "residence_capriolo",
+  "version": "1.0.0",
+  "description": "a web page displaying a inn in Livigno, Italy.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "compile:sass": "node-sass ./public/sass/main.scss ./public/stylesheets/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larsbaera/residence_capriolo" 
+  },
+  "author": "Lars-Arne Bæra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larsbaera/residence_capriolo/issues"
+  },
+  "homepage": "https://github.com/larsbaera/residence_capriolo#readme",
+  "engines": {
+    "node":"8.9.3",
+    "npm":"5.6.0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.1.4",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0-beta.2",
+    "compass": "^0.1.1",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "heroku": "^0.2.0",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.13.6",
+    "node-sass": "^4.7.2",
+    "nodemailer": "^4.4.1",
+    "nodemon": "^1.12.5",
+    "passport": "^0.4.0",
+    "passport-local-mongoose": "^4.4.0"
+  }
+}
