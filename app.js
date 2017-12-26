@@ -7,7 +7,7 @@ var nodemailer = require("nodemailer");
 const sgMail = require('@sendgrid/mail');
 app.use(express.static(__dirname + "/public")); 
 app.set('view engine', "ejs");
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 
 
 app.use(bodyParser.urlencoded({extended:false}));
@@ -54,5 +54,6 @@ res.redirect('/');
 
 
 app.listen(PORT, function() {
-    console.log("Server is running on port 3000");
+    console.log("Server is running on port " + PORT);
+    
 });
