@@ -1,17 +1,60 @@
 .footer {
-    background-color: $color-main;
-    padding: 6rem;
-    font-size: 1.4rem;
-    color:$color-white;
-    margin-top: -1rem;
+  background-color: $color-main;
+  padding: 6rem;
+  font-size: 1.8rem;
+  color: $color-white;
+  margin-top: -1rem;
 
-    @include respond(tab-port){
-        padding: 8rem 0;
+  &__logo {
+    margin: 2rem 0;
+    font-size: 10rem;
+  }
 
-    }
+  &__heading {
+    font-size: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.5rem;
+  }
+  &__heading-sub {
+    font-size: 2.5rem;
+    margin-right: 4rem;
     
-    &__list {
-        list-style: none;
+  }
+  &__cell {
+    display: table-cell;
+    margin: 2rem 0 2rem 2rem;
+    width: 45%;
+    text-align: left;
+  }
+  &__adress {
+    margin: 2rem;
+  }
+
+  &__email {
+    color: $color-white;
+  }
+
+  &__icon {
+    color: $color-white !important;
+    font-size: 2rem;
+  }
+
+  &__social {
+    color: $color-white;
+    font-size: 5rem;
+    a{
+        color:$color-white;
     }
-    
+  }
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
 }
+
+footer strong{
+    letter-spacing: .25rem
+}
+// .div-space{
+//     text-align:left;
+// }

@@ -8,13 +8,14 @@
 
     &__logo-box{
         position: absolute;
-        top: 4rem;
-        left:4rem;
+        top: 3rem;
+        left:3rem;
         z-index: 10;
     
     }
     &__logo{
-        height:150px;
+        color:$color-white;
+        font-size: 7rem;
     }
 
     &__text-box{

@@ -7,12 +7,6 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/button";
-@import "components/appartment";
-@import "components/map";
-@import "components/popup";
-@import "components/carousel";
-
 
 @import "layout/header";
 @import "layout/footer";
@@ -20,6 +14,14 @@
 @import "layout/navigation";
 @import "layout/info";
 @import "layout/booking";
+
+@import "components/button";
+@import "components/appartment";
+@import "components/map";
+@import "components/popup";
+@import "components/carousel";
+
+
 
 
 @import "pages/home";

@@ -7,7 +7,7 @@ var nodemailer = require("nodemailer");
 const sgMail = require('@sendgrid/mail');
 app.use(express.static(__dirname + "/public")); 
 app.set('view engine', "ejs");
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 
 app.use(bodyParser.urlencoded({extended:false}));
