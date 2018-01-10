@@ -1,0 +1,1 @@
+$('[data-toggle="myModal"]').modal();
