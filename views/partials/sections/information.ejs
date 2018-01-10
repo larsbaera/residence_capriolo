@@ -1,0 +1,89 @@
+<section class="section-terms">
+    <div class="terms">
+        <div>
+            <h2 class="heading-secondary center">General Information, services and facilities </h2>
+            <div class="information">
+                <div class="information__services">
+                    <h3 class="heading__tertiary center">
+                        <span class="terms__icon">
+                            <i class="far fa-check-square"></i>
+                        </span>
+                        <br>
+                        <strong>The offer includes:</strong>
+                    </h3>
+                    <ul class="terms__list center">
+                        <li> All Expences Included
+                            <br>
+                            <span class="terms__extras">(Water, Electricity And Taxes)</span>
+                        </li>
+                        <li> Bedsheets And Towels</li>
+                        <li> Final Cleaning Of Apartment</li>
+                        <li> Ski room For Storage
+                            <br>
+                            <span class="terms__extras">(In The Winter)</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-wifi"></i> Wi-Fi Is Included</li>
+                    </ul>
+                </div>
+                <div class="information__conditions">
+                    <h3 class="heading__tertiary  center">
+                        <span class="terms__icon">
+                            <i class="fa fa-edit"></i>
+                        </span>
+                        <br>
+                        <strong>Conditions</strong>
+                    </h3>
+                    <ul class="terms__list center">
+                        <li>Check In: From 14:00 - 20:00</li>
+                        <li>Check Out: From 07:00 - 10:00 </li>
+                        <br>
+                        <li> At check-in, A Deposit Will Be Requested (50-100€)
+                            <br>
+                            <span class="terms__extras">Will be returned at check out</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information__transport">
+                    <h3 class="heading__tertiary center">
+                        <span class="terms__icon">
+                            <i class="fa fa-taxi"></i>
+                        </span>
+                        <br>
+                        <strong>Transport</strong>
+                    </h3>
+                    <ul class="terms__list center">
+                        <li> Bus from Bormio: 20 min </li>
+                        <li> Train from Milano: 3 hours </li>
+                        <li> Bus from Milano: 4 hours </li>
+                        <li> Bus from Davos: 1 hour </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container mapContainer">
+                <h2 class="heading-secondary center">Here We Are:</h2>
+                <div class="dicMap">
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var livigno = {
+                                lat: 46.524401,
+                                lng: 10.127369
+                            };
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 19,
+                                center: livigno
+                            });
+                            var marker = new google.maps.Marker({
+                                position: livigno,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnPQX1h8cS8NVHBTw7m2jmU8jfF0P1CE0&callback=initMap">
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
